@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,11 +33,9 @@ export default function Home() {
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="/products"
+        <Link
+          href={"/products"}
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold">
             Products
@@ -45,13 +44,11 @@ export default function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">Nuestra exclusiva tienda</p>
-        </a>
+        </Link>
 
-        <a
-          href="/blog"
+        <Link
+          href={"/blog"}
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold">
             Blog
@@ -60,13 +57,11 @@ export default function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">Ingresa a leer nuestros específicos artículos</p>
-        </a>
+        </Link>
 
-        <a
-          href="contact"
+        <Link
+          href={"contact"}
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold">
             Contact
@@ -75,13 +70,11 @@ export default function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-sm opacity-50">La forma más rápida de contactarnos</p>
-        </a>
+        </Link>
 
-        <a
-          href="login"
+        <Link
+          href={"login"}
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold">
             Ingresá
@@ -92,12 +85,11 @@ export default function Home() {
           <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
             Con tu usuario y pass, o regitrate para tener todos los beneficios!
           </p>
-        </a>
-        <a
-          href="about"
+        </Link>
+
+        <Link
+          href={"about"}
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold">
             About
@@ -106,7 +98,34 @@ export default function Home() {
             </span>
           </h2>
           <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">All information about us is here</p>
-        </a>
+        </Link>
+
+        <div className="flex flex-wrap">
+          <Link href={"/"} className="button-blue">
+            Home
+          </Link>
+          <Link href={"/about"} className="button-blue">
+            About
+          </Link>
+          <Link href={"/contact"} className="button-blue">
+            Contact
+          </Link>
+          <Link href={"/products"} className="button-blue">
+            Product
+          </Link>
+          <Link href={"/login"} className="button-blue">
+            Login
+          </Link>
+          <Link href={"/registro"} className="button-blue">
+            SingUp
+          </Link>
+          <Link href={"/password"} className="button-blue">
+            Pass Forgeted
+          </Link>
+          <Link href={"/dashboard"} className="button-blue">
+            Dashboard
+          </Link>
+        </div>
       </div>
     </main>
   );

@@ -12,6 +12,10 @@ export default function CommentDetail({
         <img src="https://picsum.photos/200" alt="foto random" />
         <h3 className="text-2xl">Product id: {params.prod}</h3>
         <h4 className="text-lg">Comment : {params.commentId}</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure mollitia ad cum doloremque laborum, itaque
+          inventore maxime quisquam ut fugiat dolorem praesentium illo libero, quod eum est vitae? Modi, similique!
+        </p>
       </figure>
     </>
   );

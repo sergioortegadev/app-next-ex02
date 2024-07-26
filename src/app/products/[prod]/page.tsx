@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import SeeComment from "./SeeComment";
 
 type Props = {
   params: {
@@ -27,6 +28,7 @@ export default function ProdDetail({ params }: Props) {
           </code>
         </p>
       </figure>
+      <SeeComment />
     </>
   );
 }
